@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image in Marquee</title>
+  <style>
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      margin-top: 20px;
+    }
+
+    .marquee-images {
+      display: inline-block;
+      animation: scroll-left 10s linear infinite;
+    }
+
+    .marquee-images img {
+      height: 300px;
+      margin: 0 20px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h2>Image in Marquee</h2>
+    <p>
+      On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look. You can easily change the formatting of selected text in the document by choosing a style from the Quick Styles gallery on the Home tab. You can also format text directly by using other controls on the Home tab. Most controls offer the option of using the current theme or applying a format that you specify directly. To change the overall look of your document, choose new theme elements on the Page Layout tab. To modify the styles available in the Quick Style gallery, use the Change Current Quick Style Set command. Both the Themes gallery and the Quick Styles gallery provide reset commands, so you can always restore your document to the original look contained in your current template.
+    </p>
+    <!-- SINGLE, LARGE SCROLLING IMAGE CLOSE TO TEXT -->
+    <div class="marquee-container">
+      <div class="marquee-images">
+        <img src="C:\Users\KYATHI. K\OneDrive\Documents\Pictures\Screenshots 1\marquee.png" alt="Books">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
